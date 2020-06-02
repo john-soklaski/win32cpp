@@ -26,17 +26,17 @@ win32cpp::check_failed::check_failed(long result, const wchar_t* file, int line,
 
 const char* win32cpp::check_failed::errorCodeMessage() const
 {
-    return u8"";
+    return "";
 }
 
 const char* win32cpp::hresult_check_failed::errorCodeMessage() const
 {
-    return u8"HRESULT: ";
+    return "HRESULT: ";
 }
 
 const char* win32cpp::win32_check_failed::errorCodeMessage() const
 {
-    return u8"WCODE: ";
+    return "WCODE: ";
 }
 
 std::wstring win32cpp::check_failed::w_what() const

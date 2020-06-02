@@ -30,7 +30,7 @@ namespace win32cpp
 	protected:
 		virtual const char* errorCodeMessage() const override
 		{
-			return u8"NTSTATUS: ";
+            return "NTSTATUS: ";
 		}
 	};
 
